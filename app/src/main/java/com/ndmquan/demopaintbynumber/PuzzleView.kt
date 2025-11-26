@@ -131,7 +131,7 @@ class PuzzleView @JvmOverloads constructor(
 
             var tappedShapeName: String? = null
             for (name in shapeRegions.keys.reversed()) {
-                if (shapeRegions[name]?.contains(x, y) == true && shapeColors[name] == selectedColor) {
+                if (shapeRegions[name]?.contains(x, y) == true) {
                     tappedShapeName = name
                     break
                 }
